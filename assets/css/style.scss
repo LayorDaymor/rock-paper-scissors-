@@ -3,10 +3,14 @@
     padding: 0;
     box-sizing: border-box;
   }
+body{
+  height: 100vh;
+  width: 100vw;
+}  
   
   section {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-color: rgb(33, 33, 41);
     font-family: sans-serif;
   }
@@ -189,12 +193,12 @@ color: crimson;
     align-items: center;
   }
   .score h2 {
-    font-size: 30px;
+    font-size: 1rem;
   }
   .score p {
     text-align: center;
     padding: 10px;
-    font-size: 25px;
+    font-size: 1rem;
   }
   
   .intro {
@@ -281,6 +285,7 @@ color: crimson;
   
   .intro h1 {
     font-size: 2rem;
+    text-align: center;
   }
   .intro button,
   .match button {
@@ -315,7 +320,8 @@ color: crimson;
     align-items: center;
   }
   img{
-    height: 13rem;
+    margin-top: 3rem;
+    height:10rem;
    
   }
   .options {

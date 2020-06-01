@@ -103,7 +103,7 @@ const game = () => {
           updateScore();
           return;
         } else {
-          winner.textContent = "Player Wins";
+          winner.textContent = `${userName2} Wins`;
           pScore++;
           updateScore();
           return;
@@ -117,7 +117,7 @@ const game = () => {
           updateScore();
           return;
         } else {
-          winner.textContent = "Player Wins";
+          winner.textContent = `${userName2} Wins`;
           pScore++;
           updateScore();
           return;
