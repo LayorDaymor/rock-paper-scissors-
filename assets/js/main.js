@@ -8,17 +8,22 @@ const game = () => {
       const introScreen = document.querySelector(".intro");
       const matchScreen = document.querySelector(".match");
       const restartGame=document.getElementById("restartGame");
+
+
+
+
       restartGame.addEventListener("click",()=>{
         location.reload();
-
-
       })
       
   ;
   
       playBtn.addEventListener("click", () => {
+        var PlayerNameInput=document.getElementById("myText").value;
+        var PlayerNamePlace=document.getElementById("demo");
         introScreen.classList.add("fadeOut");
         matchScreen.classList.add("fadeIn");
+        PlayerNamePlace.textContent=PlayerNameInput;
       });
     };
     //Play Match
@@ -67,6 +72,8 @@ const game = () => {
     };
   
     const compareHands = (playerChoice, computerChoice) => {
+      const userName2=document.getElementById("myText").value;
+     
       //Update Text
       const winner = document.querySelector(".winner");
       //Checking for a tie
@@ -77,7 +84,7 @@ const game = () => {
       //Check for Rock
       if (playerChoice === "rock") {
         if (computerChoice === "scissors") {
-          winner.textContent = "Player Wins";
+          winner.innerHTML =`${userName2} Wins`;
           pScore++;
           updateScore();
           return;
@@ -125,4 +132,4 @@ const game = () => {
   
   //start the game function
   game();
-  
+
