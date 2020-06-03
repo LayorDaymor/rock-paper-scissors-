@@ -4,6 +4,8 @@ const game = () => {
 
     //Start the Game
     const startGame = () => {
+      const body=document.querySelector("body")
+      const audio=body.querySelector("audio")
       const playBtn = document.querySelector(".intro button");
       const introScreen = document.querySelector(".intro");
       const matchScreen = document.querySelector(".match");
@@ -19,11 +21,14 @@ const game = () => {
   ;
   
       playBtn.addEventListener("click", () => {
+        const body=document.querySelector("body")
+        const audio=body.querySelector("audio")
         var PlayerNameInput=document.getElementById("myText").value;
         var PlayerNamePlace=document.getElementById("demo");
         introScreen.classList.add("fadeOut");
         matchScreen.classList.add("fadeIn");
         PlayerNamePlace.textContent=PlayerNameInput;
+        audio.play();
       });
     };
     //Play Match
