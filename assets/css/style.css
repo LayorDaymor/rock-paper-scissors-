@@ -13,7 +13,11 @@ body {
 section {
   height: 100%;
   width: 100%;
+<<<<<<< HEAD
   background-color: #0c0d0d;
+=======
+  background-color: #212129;
+>>>>>>> 418a96b55349d0a90cb1b2ad66a31ad3c4e89e84
   font-family: sans-serif;
 }
 

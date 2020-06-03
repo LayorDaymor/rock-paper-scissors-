@@ -4,8 +4,11 @@ const game = () => {
 
     //Start the Game
     const startGame = () => {
+<<<<<<< HEAD
       const body=document.querySelector("body")
       const audio=body.querySelector("audio")
+=======
+>>>>>>> 418a96b55349d0a90cb1b2ad66a31ad3c4e89e84
       const playBtn = document.querySelector(".intro button");
       const introScreen = document.querySelector(".intro");
       const matchScreen = document.querySelector(".match");
@@ -21,6 +24,7 @@ const game = () => {
   ;
   
       playBtn.addEventListener("click", () => {
+<<<<<<< HEAD
         const body=document.querySelector("body")
         const audio=body.querySelector("audio")
         var PlayerNameInput=document.getElementById("myText").value;
@@ -29,6 +33,16 @@ const game = () => {
         matchScreen.classList.add("fadeIn");
         PlayerNamePlace.textContent=PlayerNameInput;
         audio.play();
+=======
+        var PlayerNameInput=document.getElementById("myText").value;
+        var PlayerNamePlace=document.getElementById("demo");
+        var body=document.querySelector("body");
+        var soundTruck=body.querySelector("audio") 
+        introScreen.classList.add("fadeOut");
+        matchScreen.classList.add("fadeIn");
+        PlayerNamePlace.textContent=PlayerNameInput;
+        soundTruck.play();
+>>>>>>> 418a96b55349d0a90cb1b2ad66a31ad3c4e89e84
       });
     };
     //Play Match
